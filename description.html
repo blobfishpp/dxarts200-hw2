@@ -1,0 +1,85 @@
+<!-- description.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Following Milky — Description</title>
+<style>
+    body {
+        background: #ffffff;
+        color: #0d0d0d;
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 80px 20px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .content-wrapper {
+        max-width: 580px;
+        margin: 0 auto;
+        line-height: 2;
+        font-size: 1.05rem;
+    }
+
+    .unhide-box {
+        display: inline-block;
+        border: 1px solid #0d0d0d;
+        padding: 10px 24px;
+        font-family: Georgia, serif;
+        font-size: 0.85rem;
+        letter-spacing: 0.12em;
+        cursor: pointer;
+        margin: 2em 0;
+        background: none;
+        color: #0d0d0d;
+    }
+
+    .unhide-box:hover {
+        background: #0d0d0d;
+        color: #ffffff;
+    }
+
+    #video-section {
+        display: none;
+        margin-top: 1em;
+    }
+
+    #video-section video {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+    }
+
+    #video-section a {
+        display: inline-block;
+        margin-top: 1.4em;
+        color: #0d0d0d;
+        text-decoration: underline;
+        font-size: 1.05rem;
+    }
+</style>
+</head>
+<body>
+
+<div class="content-wrapper">
+
+    <button class="unhide-box" id="unhide-btn">unhide</button>
+
+    <div id="video-section">
+        <video controls src="milky-shimmer.mp4"></video>
+        <a href="description-2.html">read the description</a>
+    </div>
+
+</div>
+
+<script>
+    document.getElementById('unhide-btn').addEventListener('click', function () {
+        this.style.display = 'none';
+        document.getElementById('video-section').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
