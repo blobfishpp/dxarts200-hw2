@@ -1,0 +1,186 @@
+<!-- new-uw.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Following Milky — After</title>
+<style>
+    body {
+        background: #0d0d0d;
+        color: #f2f2f2;
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 80px 20px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .content-wrapper {
+        max-width: 580px;
+        margin: 0 auto;
+        line-height: 2;
+        font-size: 1.05rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        letter-spacing: 0.15em;
+        color: #888;
+        text-transform: lowercase;
+        margin-top: 0;
+        margin-bottom: 2.5em;
+    }
+
+    p {
+        margin-bottom: 1.6em;
+    }
+
+    .reveal .inner {
+        color: transparent;
+        transition: color 0.25s ease;
+        cursor: default;
+    }
+
+    .reveal:hover .inner {
+        color: #c9aaff;
+    }
+
+    a {
+        color: #f2f2f2;
+        text-decoration: underline;
+    }
+
+    a.link-blue {
+        color: #add8e6;
+    }
+
+    a.link-green {
+        color: #90c490;
+    }
+
+    a.link-gold {
+        color: #d4a843;
+    }
+
+    .reveal .inner a {
+        color: transparent;
+    }
+
+    .reveal:hover .inner a {
+        color: #c9aaff;
+    }
+
+    .music {
+        margin-bottom: 3em;
+    }
+
+    .caption {
+        font-size: 0.75rem;
+        color: #555;
+        letter-spacing: 0.1em;
+        margin-top: 0.4em;
+        margin-bottom: 0;
+    }
+
+    .music audio {
+        width: 100%;
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+    }
+
+    .music audio:hover {
+        opacity: 1;
+    }
+
+    .photo-extend {
+        position: relative;
+        width: 40%;
+        margin: 1.6em auto 2.4em;
+    }
+
+    .photo-extend .img-spacer {
+        width: 100%;
+        display: block;
+        visibility: hidden;
+    }
+
+    .photo-extend .img-a,
+    .photo-extend .img-b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.4s ease;
+    }
+</style>
+</head>
+<body>
+
+<div class="content-wrapper">
+
+    <h2>we don't talk anymore</h2>
+
+    <div class="music">
+        <audio controls autoplay src="natural-gsoul.mp3"></audio>
+        <p class="caption">NATURAL — G.Soul</p>
+    </div>
+
+    <p>My cousin and I stayed in touch for a while, but over time, things became quieter between us.</p>
+
+    <p>Later, I heard from a mutual friend that there had been an incident.</p>
+
+    <div class="reveal">
+        <p><span class="inner">Milky was taken by authorities and rehomed within less than 24 hours.</span></p>
+    </div>
+
+    <p>It shocked me.</p>
+
+    <div class="reveal">
+        <p><span class="inner">The authorities received a report that Milky had been found outside on the street. Maybe she accidentally escaped from the backyard. My friend also suspected that one of my cousin's new neighbors disliked them and may have intentionally let Milky out.</span></p>
+    </div>
+
+    <p><span class="reveal"><span class="inner">The authorities knew my cousin was Milky&#8217;s owner, and they contacted her.</span></span> According to our mutual friend and my cousin&#8217;s husband, my cousin was alone at the time, emotionally overwhelmed, and signed documents to &#8220;voluntarily give up&#8221; her rights <span class="reveal"><span class="inner">to Milky.</span></span> I was speechless.</p>
+
+    <div class="reveal">
+        <p><span class="inner">I still have doubts about the situation. Normally, adoption and transfer procedures do not happen that quickly. I wondered whether someone specifically wanted Milky and had already arranged something beforehand.</span></p>
+        <p><span class="inner">Milky had also been professionally trained as a service dog, which made the entire situation even harder for me to understand.</span></p>
+    </div>
+
+    <div class="photo-extend" id="photo-swap">
+        <img class="img-spacer" src="new-uw-1b.jpg" alt="">
+        <img class="img-b" src="new-uw-1b.jpg" alt="">
+        <img class="img-a" src="new-uw-1a.jpg" alt="">
+    </div>
+
+    <p>I was never told the complete story, and I do not know how much of what I heard was emotionally filtered through shock and grief.</p>
+
+    <p>My cousin never spoke to me about it directly, and I never asked her about it either.</p>
+
+    <p><span class="reveal"><span class="inner">At one point, I thought about whether legal action might have been possible because Milky had been trained as a service dog.</span></span> I even wanted to help pay for a lawsuit. But they had already tried to move on.</p>
+
+    <p><a href="new-tufts.html" class="link-blue">If I were in Boston</a>, at least I could accompany my cousin, and maybe convince her for the lawsuit.</p>
+    <p>If they had already moved on, I had to move on, too, with <a href="shimmer.html" class="link-green">my basset hound Shimmer</a>. The best thing I could do is to pray for a <a href="good-ending.html" class="link-gold">good ending</a> of the incident. </p>
+
+</div>
+
+<script>
+    const swap = document.getElementById('photo-swap');
+    const imgA = swap.querySelector('.img-a');
+    const imgB = swap.querySelector('.img-b');
+
+    imgB.style.opacity = '0';
+
+    swap.addEventListener('mouseenter', () => {
+        imgA.style.opacity = '0';
+        imgB.style.opacity = '1';
+    });
+    swap.addEventListener('mouseleave', () => {
+        imgA.style.opacity = '1';
+        imgB.style.opacity = '0';
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!-- shimmer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Following Milky — Shimmer</title>
+<style>
+    body {
+        background: #0d0d0d;
+        color: #f2f2f2;
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 80px 20px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .content-wrapper {
+        max-width: 580px;
+        margin: 0 auto;
+        line-height: 2;
+        font-size: 1.05rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        letter-spacing: 0.15em;
+        color: #888;
+        text-transform: lowercase;
+        margin-top: 0;
+        margin-bottom: 2.5em;
+    }
+
+    p {
+        margin-bottom: 1.6em;
+    }
+
+    .reveal .inner {
+        color: transparent;
+        transition: color 0.25s ease;
+        cursor: default;
+    }
+
+    .reveal:hover .inner {
+        color: #90c490;
+    }
+
+    a {
+        color: #f2f2f2;
+        text-decoration: underline;
+    }
+
+    a.link-purple {
+        color: #c9aaff;
+    }
+
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin: 1.6em 0 2.4em;
+    }
+
+    .grid-item {
+        position: relative;
+        aspect-ratio: 1;
+        overflow: hidden;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .grid-item .img-b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .grid-item:hover .img-b {
+        opacity: 1;
+    }
+
+    .reveal .inner a {
+        color: transparent;
+    }
+
+    .reveal:hover .inner a {
+        color: #90c490;
+    }
+</style>
+</head>
+<body>
+
+<div class="content-wrapper">
+
+    <h2>shimmer</h2>
+
+    <p>Basset hounds have always been my favorite dog.</p>
+
+    <p>After finally figuring out the financial and timely responsibility involved, I decided I was ready to become a responsible owner.</p>
+
+    <div class="reveal">
+        <p><span class="inner">I already had years of experience caring for basset hounds through Milky.</span></p>
+    </div>
+
+    <p>So I brought home a bi-color basset hound and named him Shimmer.</p>
+
+    <div class="photo-grid">
+        <div class="grid-item">
+            <img class="img-a" src="shimmer-1.jpg" alt="">
+            <img class="img-b" src="milky-1.jpg" alt="">
+        </div>
+        <div class="grid-item">
+            <img class="img-a" src="shimmer-2.jpg" alt="">
+            <img class="img-b" src="milky-2.jpg" alt="">
+        </div>
+        <div class="grid-item">
+            <img class="img-a" src="shimmer-3.jpg" alt="">
+            <img class="img-b" src="milky-3.jpg" alt="">
+        </div>
+        <div class="grid-item">
+            <img class="img-a" src="shimmer-4.jpg" alt="">
+            <img class="img-b" src="milky-4.jpg" alt="">
+        </div>
+        <div class="grid-item">
+            <img class="img-a" src="shimmer-5.jpg" alt="">
+            <img class="img-b" src="milky-5.jpg" alt="">
+        </div>
+        <div class="grid-item">
+            <img class="img-a" src="shimmer-6.jpg" alt="">
+            <img class="img-b" src="milky-6.jpg" alt="">
+        </div>
+    </div>
+
+    <p>Sometimes, just through looking at him, pulls <a href="index.html" class="link-purple">some memories</a> back to the surface.</p>
+
+</div>
+
+</body>
+</html>

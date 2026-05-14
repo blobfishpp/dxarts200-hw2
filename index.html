@@ -68,6 +68,28 @@
         color: #c9aaff;
     }
 
+    .music {
+        margin-bottom: 3em;
+    }
+
+    .caption {
+        font-size: 0.75rem;
+        color: #555;
+        letter-spacing: 0.1em;
+        margin-top: 0.4em;
+        margin-bottom: 0;
+    }
+
+    .music audio {
+        width: 100%;
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+    }
+
+    .music audio:hover {
+        opacity: 1;
+    }
+
     .photo-swap {
         position: relative;
         width: 40%;
@@ -98,6 +120,11 @@
 
     <h2>the first walk</h2>
 
+    <div class="music">
+        <audio controls autoplay src="let me know-gsoul.mp3"></audio>
+        <p class="caption">LET ME KNOW — G.Soul</p>
+    </div>
+
     <p>Freshman year at UW.</p>
 
     <p>My dad introduced me to my distant cousin, a PhD student also at UW. We live within a 10-minute walk of each other.</p>
@@ -111,14 +138,16 @@
 
     <p>After that, we <span class="reveal"><span class="inner">, I mean, me and my cousin, and me and Milky,</span></span> became very close friends.</p>
 
-    <p><span class="reveal"><span class="inner">I walked her.<br>
-    I took care of her when my cousin traveled.
-    I cooked for her. I bathed her.
-    I took her to Medina Park for picnics.
-    I bought a lot of things for her.
-    I made shirts with her face on it.
-    <br>
-    At some point, &#8220;love Milky&#8221; almost became a personality.</span></span></p>
+    <div class="reveal">
+        <p><span class="inner">I walked her.<br>
+        I took care of her when my cousin traveled.
+        I cooked for her. I bathed her.
+        I took her to Medina Park for picnics.
+        I bought a lot of things for her.
+        I made shirts with her face on it.</span></p>
+
+        <p><span class="inner">At some point, &#8220;love Milky&#8221; almost became a personality.</span></p>
+    </div>
 
     <p>My cousin introduced me to her friends. Some became my friends too.</p>
 
