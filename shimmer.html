@@ -52,6 +52,28 @@
         text-decoration: underline;
     }
 
+    .music {
+        margin-bottom: 3em;
+    }
+
+    .caption {
+        font-size: 0.75rem;
+        color: #555;
+        letter-spacing: 0.1em;
+        margin-top: 0.4em;
+        margin-bottom: 0;
+    }
+
+    .music audio {
+        width: 100%;
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+    }
+
+    .music audio:hover {
+        opacity: 1;
+    }
+
     a.link-purple {
         color: #c9aaff;
     }
@@ -102,6 +124,11 @@
 <div class="content-wrapper">
 
     <h2>shimmer</h2>
+
+    <div class="music">
+        <audio controls autoplay src="another sad love song-gsoul.mp3"></audio>
+        <p class="caption">ANOTHER SAD LOVE SONG — G.Soul</p>
+    </div>
 
     <p>Basset hounds have always been my favorite dog.</p>
 
