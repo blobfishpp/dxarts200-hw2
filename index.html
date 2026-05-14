@@ -56,6 +56,10 @@
         color: #add8e6;
     }
 
+    a.link-purple {
+        color: #c9aaff;
+    }
+
     .reveal .inner a {
         color: transparent;
     }
@@ -63,36 +67,62 @@
     .reveal:hover .inner a {
         color: #c9aaff;
     }
+
+    .photo-swap {
+        position: relative;
+        width: 40%;
+        margin: 1.6em 0 2.4em auto;
+    }
+
+    .photo-swap img {
+        width: 100%;
+        display: block;
+    }
+
+    .photo-swap .photo-b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .photo-swap:hover .photo-b {
+        opacity: 1;
+    }
 </style>
 </head>
 <body>
 
 <div class="content-wrapper">
 
-    <h2>memory</h2>
+    <h2>the first walk</h2>
 
     <p>Freshman year at UW.</p>
 
-    <p>My dad introduced me to my cousin, a PhD student also at UW. We live within a 10-minute walk of each other.</p>
+    <p>My dad introduced me to my distant cousin, a PhD student also at UW. We live within a 10-minute walk of each other.</p>
 
-    <p><span class="reveal"><span class="inner">The same day we exchanged social media, she found out I love basset hounds. She happens to have one.</span></span> We immediately went to have pizza for dinner. <span class="reveal"><span class="inner">She brought Milky.</span></span></p>
+    <p><span class="reveal"><span class="inner">The same day we exchanged social media, she found out I love basset hounds. She happens to have one.</span></span> We immediately went to have pizza for dinner. <span class="reveal"><span class="inner">She brought Milky.</span></span> Then we a walk at UW.</p>
+
+    <div class="photo-swap">
+        <img class="photo-a" src="index-1a.jpg" alt="">
+        <img class="photo-b" src="index-1b.jpg" alt="">
+    </div>
 
     <p>After that, we <span class="reveal"><span class="inner">, I mean, me and my cousin, and me and Milky,</span></span> became very close friends.</p>
 
     <p><span class="reveal"><span class="inner">I walked her.<br>
-    I took care of her when my cousin traveled.<br>
-    I cooked for her. I bathed her.<br>
-    I took her to Medina Park for picnics.<br>
-    I bought a lot of things for her.<br>
-    I made shirts with her face on it.<br>
+    I took care of her when my cousin traveled.
+    I cooked for her. I bathed her.
+    I took her to Medina Park for picnics.
+    I bought a lot of things for her.
+    I made shirts with her face on it.
     <br>
-    At some point,<br>
-    &#8220;love Milky&#8221;<br>
-    almost became a personality.</span></span></p>
+    At some point, &#8220;love Milky&#8221; almost became a personality.</span></span></p>
 
     <p>My cousin introduced me to her friends. Some became my friends too.</p>
 
-    <p>At the end of my freshman year, I had the offer to <a class="link-blue" href="tufts.html">transfer to Tufts university</a> in Boston. <span class="reveal"><span class="inner">But I chose to <a href="uw.html">stay at UW</a>.</span></span> It was a hard decision to make, because I consider my cousin <span class="reveal"><span class="inner">and Milky</span></span> to be important to me.</p>
+    <p>At the end of my freshman year, I had the offer to <a class="link-blue" href="tufts.html">transfer to Tufts university</a> in Boston. Or I could <a href="uw.html" class="link-purple">stay at UW</a>. It was a hard decision to make, because I consider my cousin <span class="reveal"><span class="inner">and Milky</span></span> to be important to me.</p>
 
 </div>
 

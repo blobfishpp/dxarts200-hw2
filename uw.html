@@ -1,0 +1,190 @@
+<!-- uw.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Following Milky — UW</title>
+<style>
+    body {
+        background: #0d0d0d;
+        color: #f2f2f2;
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 80px 20px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .content-wrapper {
+        max-width: 580px;
+        margin: 0 auto;
+        line-height: 2;
+        font-size: 1.05rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        letter-spacing: 0.15em;
+        color: #888;
+        text-transform: lowercase;
+        margin-top: 0;
+        margin-bottom: 2.5em;
+    }
+
+    p {
+        margin-bottom: 1.6em;
+    }
+
+    .reveal .inner {
+        color: transparent;
+        transition: color 0.25s ease;
+        cursor: default;
+    }
+
+    .reveal:hover .inner {
+        color: #c9aaff;
+    }
+
+    a {
+        color: #f2f2f2;
+        text-decoration: underline;
+    }
+
+    .music {
+        margin-bottom: 3em;
+    }
+
+    .caption {
+        font-size: 0.75rem;
+        color: #555;
+        letter-spacing: 0.1em;
+        margin-top: 0.4em;
+        margin-bottom: 0;
+    }
+
+    .music audio {
+        width: 100%;
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+    }
+
+    .music audio:hover {
+        opacity: 1;
+    }
+
+    .photo {
+        width: 40%;
+        display: block;
+        margin: 1.6em auto 2.4em 0;
+    }
+
+
+    .photo-extend {
+        position: relative;
+        width: 40%;
+        margin: 1.6em auto 2.4em;
+    }
+
+    .photo-extend .img-spacer {
+        width: 100%;
+        display: block;
+        visibility: hidden;
+    }
+
+    .photo-extend .img-a,
+    .photo-extend .img-b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.4s ease;
+    }
+
+    a.link-blue {
+        color: #add8e6;
+    }
+
+    .reveal .inner a {
+        color: transparent;
+    }
+
+    .reveal:hover .inner a {
+        color: #c9aaff;
+    }
+</style>
+</head>
+<body>
+
+<div class="content-wrapper">
+
+    <h2>Seattle</h2>
+
+    <div class="music">
+        <audio controls autoplay src="seattle-sam kim.mp3"></audio>
+        <p class="caption">SEATTLE — Sam Kim</p>
+    </div>
+
+    <p>Seattle is beautiful.</p>
+
+    <p>My cousin first came here for undergrad, and stayed for her PhD at UW.</p>
+
+    <p>Later, she got married at the Seattle Aquarium.</p>
+
+    <img class="photo" src="uw-1.jpg" alt="">
+
+    <p>I love aquariums. Growing up, my parents were usually busy, and I cannot remember the last time they accompanied me to one.</p>
+
+    <p>So standing inside the aquarium during my cousin's wedding felt strangely warm to me.</p>
+
+    <p>Like being temporarily adopted by my cousin and her family and friends.</p>
+
+    <p>Many of my cousin's friends were software engineers. Under their influence, I eventually became a double major in computer science and statistics.</p>
+
+    <p>The department of computer science and engineering graduates around 500 undergraduate students every year.</p>
+
+    <p>Sometimes I felt deeply pressured there. Like everyone else already took difficult courses, published papers or got internships.</p>
+
+    <p>Imposter syndrome became part of the atmosphere.</p>
+
+    <div class="reveal">
+        <p><span class="inner">Loving Milky became a way to escape that pressure.</span></p>
+        <p><span class="inner">When she pulled me through the direction she'd like to sniff, my attention belonged entirely to her. For a while, I stopped thinking about competition, expectations, or whether I was falling behind.</span></p>
+    </div>
+
+    <div class="photo-extend" id="photo-swap">
+        <img class="img-spacer" src="uw-2b.jpg" alt="">
+        <img class="img-b" src="uw-2b.jpg" alt="">
+        <img class="img-a" src="uw-2a.jpg" alt="">
+    </div>
+
+    <p>Sometimes I wondered if I would not have such imposter syndrome if I transferred to Tufts.</p>
+
+    <p>Later, after finishing her PhD, my cousin told me she and her husband<span class="reveal"><span class="inner">, and of course, Milky,</span></span> were moving to Boston for work.</p>
+
+    <p>And, coincidentally, she would be working at Tufts.</p>
+
+    <p>It slowly started to feel like a big part of my life was going to shift to Boston parallely, without me. I couldn't stop imagining what if I had <a href="tufts.html" class="link-blue">transferred to Tufts</a>.</p>
+
+</div>
+
+<script>
+    const swap = document.getElementById('photo-swap');
+    const imgA = swap.querySelector('.img-a');
+    const imgB = swap.querySelector('.img-b');
+
+    imgB.style.opacity = '0';
+
+    swap.addEventListener('mouseenter', () => {
+        imgA.style.opacity = '0';
+        imgB.style.opacity = '1';
+    });
+    swap.addEventListener('mouseleave', () => {
+        imgA.style.opacity = '1';
+        imgB.style.opacity = '0';
+    });
+</script>
+
+</body>
+</html>
